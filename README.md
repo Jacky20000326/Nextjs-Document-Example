@@ -34,3 +34,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 專案配置
+
+### Scripts
+
+- dev: next dev --turbopack
+- build: next build
+- start: next start
+- lint: next lint
+- storybook: storybook dev -p 6006
+- build-storybook: storybook build
+
+### Dependencies
+
+- next: 15.3.4
+- react: ^19.0.0
+- react-dom: ^19.0.0
+
+### DevDependencies
+
+- @chromatic-com/storybook: ^4.0.1
+- @eslint/eslintrc: ^3
+- @storybook/addon-a11y: ^9.0.14
+- @storybook/addon-docs: ^9.0.14
+- @storybook/addon-onboarding: ^9.0.14
+- @storybook/addon-vitest: ^9.0.14
+- @types/node: ^20
+- @types/react: ^19
+- @types/react-dom: ^19
+- eslint: ^9
+- eslint-config-next: 15.3.4
+- eslint-plugin-storybook: ^9.0.14
+- storybook: ^9.0.14
+- typescript: ^5
+- @storybook/nextjs-vite: ^9.0.14
+- vitest: ^3.2.4
+- @vitest/browser: ^3.2.4
+- playwright: ^1.53.1
+- @vitest/coverage-v8: ^3.2.4
