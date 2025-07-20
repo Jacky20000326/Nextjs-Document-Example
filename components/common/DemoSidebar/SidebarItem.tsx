@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Box,
-  Divider,
-  Stack,
-  Typography,
-  Collapse,
-  IconButton,
-} from "@mui/material";
+import { Box, Divider, Stack, Collapse } from "@mui/material";
 import { DrawerItemType } from "./types";
 import { SideBarTitle } from "./SideBarTitle";
 import { useState } from "react";
@@ -24,7 +17,7 @@ export const SidebarItem = ({ title, subItemList }: Props) => {
     <Box position="relative">
       <Stack px={1} gap={1}>
         <SideBarTitle title={title} isOpen={isOpen} onIsOpenSet={setIsOpen} />
-        <Divider color="#858b94" />
+        <Divider color="#3d3f43" />
       </Stack>
       <Collapse in={isOpen} timeout="auto">
         <Box py={1.2}>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Stack, Typography } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { Dispatch, SetStateAction } from "react";

@@ -10,7 +10,7 @@ export const PageSettingProvider = ({
   return (
     <>
       <Header />
-      <Stack direction="row" width="100%">
+      <Stack direction="row" width="100%" position="relative">
         <DemoSidebar />
         <Box flex={1}>{children}</Box>
       </Stack>

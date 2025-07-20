@@ -5,7 +5,6 @@ export const headerContainerStyles: SxProps<Theme> = {
   background: "linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #D2B48C 100%)",
   boxShadow: "0 4px 20px rgba(139, 69, 19, 0.15)",
   borderBottom: "2px solid rgba(160, 82, 45, 0.3)",
-  position: "sticky",
   top: 0,
   zIndex: 100,
   transition: "all 0.3s ease",

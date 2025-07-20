@@ -13,7 +13,7 @@ export const Header = () => {
       sx={headerContainerStyles}
     >
       <Typography variant="h4" component={Link} href="/" sx={brandNameStyles}>
-        Jacky&apos;s Blog
+        Brew & Build
       </Typography>
       <Navigation />
     </Stack>
