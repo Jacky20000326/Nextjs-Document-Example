@@ -13,10 +13,17 @@ interface Props {
 export const SidebarItem = ({ title, subItemList }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const isSubItemListNotEmpty = subItemList.length > 0;
+
   return (
     <Box position="relative">
-      <Stack px={1} gap={1}>
-        <SideBarTitle title={title} isOpen={isOpen} onIsOpenSet={setIsOpen} />
+      <Stack gap={1}>
+        <SideBarTitle
+          title={title}
+          isOpen={isOpen}
+          isSubItemListNotEmpty={isSubItemListNotEmpty}
+          onIsOpenSet={setIsOpen}
+        />
         <Divider color="#3d3f43" />
       </Stack>
       <Collapse in={isOpen} timeout="auto">

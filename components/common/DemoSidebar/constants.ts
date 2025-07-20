@@ -2,6 +2,10 @@ import { DrawerListType } from "./types";
 
 export const DRAWER_LIST: DrawerListType[] = [
   {
+    title: "Project Structure",
+    subItems: [],
+  },
+  {
     title: "Hooks",
     subItems: [
       {

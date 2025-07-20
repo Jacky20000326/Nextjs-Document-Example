@@ -9,11 +9,12 @@ export const Navigation = () => {
       divider={
         <Box
           sx={{
-            color: "rgba(245, 222, 179, 0.4)",
+            color: "rgba(148, 163, 184, 0.6)", // 更新為淺灰藍色
             fontSize: "1rem",
             display: "flex",
             alignItems: "center",
             filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.2))",
+            transition: "color 0.3s ease",
           }}
         >
           ☘
@@ -26,7 +27,7 @@ export const Navigation = () => {
           href={item.href}
           underline="none"
           sx={{
-            color: "#F5DEB3",
+            color: "#e2e8f0", // 淺灰色，適合深色背景
             fontFamily: "'Crimson Text', 'Georgia', serif",
             fontWeight: 500,
             fontSize: "1rem",
@@ -35,7 +36,7 @@ export const Navigation = () => {
             transition: "all 0.3s ease",
             position: "relative",
             "&:hover": {
-              color: "#FFFACD",
+              color: "#ffffff", // hover 時變純白
               transform: "translateY(-1px)",
               textShadow: "2px 2px 3px rgba(0,0,0,0.4)",
             },
@@ -46,12 +47,13 @@ export const Navigation = () => {
               height: "2px",
               bottom: "-4px",
               left: "50%",
-              backgroundColor: "#FFFACD",
+              backgroundColor: "#94a3b8", // 底線顏色改為淺灰藍
               transition: "all 0.3s ease",
               transform: "translateX(-50%)",
             },
             "&:hover:after": {
               width: "100%",
+              backgroundColor: "#cbd5e1", // hover 時底線變更淺
             },
           }}
         >
