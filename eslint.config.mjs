@@ -14,7 +14,22 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-  ...storybook.configs["flat/recommended"]
+  ...storybook.configs["flat/recommended"],
+  {
+    rules: {
+      // 检测未使用的变量和导入
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+      // 检测未使用的导入
+      "no-unused-vars": "off", // 关闭基础规则，使用 TypeScript 版本
+    },
+  },
 ];
 
 export default eslintConfig;
