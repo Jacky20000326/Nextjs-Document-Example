@@ -17,7 +17,7 @@ export const SidebarItem = ({ title, subItemList }: Props) => {
 
   return (
     <Box position="relative">
-      <Stack gap={1}>
+      <Stack>
         <SideBarTitle
           title={title}
           isOpen={isOpen}

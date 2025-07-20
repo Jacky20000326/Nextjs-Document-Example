@@ -2,35 +2,47 @@ import { DrawerListType } from "./types";
 
 export const DRAWER_LIST: DrawerListType[] = [
   {
-    title: "Project Structure",
+    title: "Storybook",
     subItems: [],
   },
   {
-    title: "Hooks",
+    title: "NextJs",
     subItems: [
       {
-        title: "useState",
+        title: "[hooks] useState",
         href: "/fetch",
       },
       {
-        title: "useEffect",
+        title: "[hooks] useEffect",
+        href: "/fetch",
+      },
+      {
+        title: "[Cache] fetch",
+        href: "/fetch",
+      },
+      {
+        title: "[Cache] unstable_cache",
         href: "/fetch",
       },
     ],
   },
   {
-    title: "Cache",
+    title: "MUI",
     subItems: [
       {
-        title: "fetch",
+        title: "[components] Button",
         href: "/fetch",
       },
       {
-        title: "unstable_cache",
+        title: "[components] Typography",
         href: "/fetch",
       },
       {
-        title: "revalidateTag",
+        title: "[components] Stack",
+        href: "/fetch",
+      },
+      {
+        title: "[components] Box",
         href: "/fetch",
       },
     ],

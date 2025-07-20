@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    mode: "light",
+    mode: "dark",
     primary: {
       main: "#1976d2",
       light: "#42a5f5",
@@ -17,30 +17,13 @@ const theme = createTheme({
       paper: "#ffffff",
     },
     sidebar: {
-      title: "#fff",
+      primary: "#fff",
+      secondary: "#858b94",
+      background: "#1b1d24",
+      divider: "#3d3f43",
     },
   },
-  typography: {
-    fontFamily: [
-      "var(--font-geist-sans)",
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-    ].join(","),
-    h3: {
-      fontWeight: 600,
-      fontSize: "18px",
-      lineHeight: "1.75rem",
-      letterSpacing: "0.01em",
-    },
-    h6: {
-      fontWeight: 600,
-    },
-  },
+  typography: {},
   components: {
     MuiAppBar: {
       styleOverrides: {

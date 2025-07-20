@@ -11,12 +11,12 @@ export const SideBarSubItem = ({ title }: Props) => {
         py: 0.8,
         borderRadius: 1,
         "&:hover": {
-          backgroundColor: "#858b94",
+          backgroundColor: "sidebar.secondary",
           cursor: "pointer",
         },
       }}
     >
-      <Typography variant="subtitle1" color="#fff" px={1}>
+      <Typography variant="subtitle1" color="sidebar.primary" px={1}>
         {title}
       </Typography>
     </Stack>

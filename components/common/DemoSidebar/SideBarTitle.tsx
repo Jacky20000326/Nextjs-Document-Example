@@ -22,14 +22,22 @@ export const SideBarTitle = ({
       direction="row"
       alignItems="center"
       justifyContent="space-between"
-      onClick={() => onIsOpenSet(!isOpen)}
-      color="#858b94"
+      onClick={() => {
+        if (isSubItemListNotEmpty) {
+          onIsOpenSet(!isOpen);
+        }
+      }}
+      color="sidebar.secondary"
       sx={{
         "&:hover": {
           width: "100%",
-          backgroundColor: isSubItemListNotEmpty ? "transparent" : "#858b94",
+          backgroundColor: isSubItemListNotEmpty
+            ? "transparent"
+            : "sidebar.secondary",
           borderRadius: 1,
-          color: isSubItemListNotEmpty ? "#858b94" : "#fff",
+          color: isSubItemListNotEmpty
+            ? "sidebar.secondary"
+            : "sidebar.primary",
           cursor: isSubItemListNotEmpty ? "default" : "pointer",
         },
       }}
@@ -42,7 +50,7 @@ export const SideBarTitle = ({
           sx={{
             transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
             transition: "transform 0.3s ease-in-out",
-            color: "#858b94",
+            color: "sidebar.secondary",
           }}
         />
       )}

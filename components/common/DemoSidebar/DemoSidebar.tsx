@@ -25,7 +25,7 @@ export const DemoSidebar = () => {
             top: 10,
             right: -10,
             zIndex: 1000,
-            backgroundColor: "#3d3f43",
+            backgroundColor: "sidebar.divider",
             borderRadius: "50%",
             width: 25,
             height: 25,
@@ -33,9 +33,9 @@ export const DemoSidebar = () => {
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         >
           {isSidebarOpen ? (
-            <ArrowBackIcon sx={{ color: "#fff", fontSize: 13 }} />
+            <ArrowBackIcon sx={{ color: "sidebar.primary", fontSize: 13 }} />
           ) : (
-            <ArrowForwardIcon sx={{ color: "#fff", fontSize: 13 }} />
+            <ArrowForwardIcon sx={{ color: "sidebar.primary", fontSize: 13 }} />
           )}
         </IconButton>
         {isSidebarOpen && (
@@ -48,7 +48,7 @@ export const DemoSidebar = () => {
             </Stack>
             <Stack>
               {DRAWER_LIST.map((item) => (
-                <Box key={item.title} mb={3}>
+                <Box key={item.title}>
                   <SidebarItem title={item.title} subItemList={item.subItems} />
                 </Box>
               ))}
