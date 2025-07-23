@@ -23,7 +23,12 @@ const theme = createTheme({
       divider: "#3d3f43",
     },
   },
-  typography: {},
+  typography: {
+    fontFamily: "Inter, sans-serif",
+    logo: {
+      fontFamily: "Pacifico, cursive",
+    },
+  },
   components: {
     MuiAppBar: {
       styleOverrides: {
