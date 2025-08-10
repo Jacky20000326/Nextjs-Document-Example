@@ -8,7 +8,18 @@ declare module "@mui/material/styles" {
       background: string;
       divider: string;
     };
+    text: {
+      primary: string;
+      secondary: string;
+      tertiary: string;
+    };
+    background: {
+      default: string;
+      paper: string;
+      primary: string;
+    };
   }
+
   interface PaletteOptions {
     sidebar: {
       primary: string;
@@ -16,14 +27,39 @@ declare module "@mui/material/styles" {
       background: string;
       divider: string;
     };
+    text: {
+      primary: string;
+      secondary: string;
+      tertiary: string;
+    };
+    background: {
+      default: string;
+      paper: string;
+      primary: string;
+    };
+  }
+
+  interface TypeText {
+    tertiary?: string;
+  }
+
+  interface TypeBackground {
+    primary: string;
+  }
+
+  interface TypographyVariant {
+    logo: React.CSSProperties;
+    tag: React.CSSProperties;
+  }
+  interface TypographyVariantsOptions {
+    logo: React.CSSProperties;
+    tag: React.CSSProperties;
   }
 }
 
-declare module "@mui/material/styles" {
-  interface TypographyVariants {
-    logo: React.CSSProperties;
-  }
-  interface TypographyVariantsOptions {
-    logo?: React.CSSProperties;
+declare module "@mui/material/Typography" {
+  interface TypographyPropsVariantOverrides {
+    logo: true;
+    tag: true;
   }
 }

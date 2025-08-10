@@ -1,11 +1,10 @@
 import { SxProps, Theme } from "@mui/material";
 
 export const StyledLink: SxProps<Theme> = {
-  color: "#b5b5b5", // 淺灰色，適合深色背景
   fontWeight: 700,
   fontSize: "1rem",
   letterSpacing: "0.02em",
-  textShadow: "1px 1px 2px rgba(0,0,0,0.3)",
+  color: "text.primary",
   transition: "all 0.3s ease",
   position: "relative",
   "&:hover": {

@@ -7,8 +7,16 @@ import { DRAWER_LIST } from "./constants";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { usePathname } from "next/navigation";
+import { ROUTES_WITHOUT_SIDEBAR } from "./constants";
+
 export const DemoSidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const pathname = usePathname();
+  const isSidebarHidden = ROUTES_WITHOUT_SIDEBAR.includes(pathname);
+
+  if (isSidebarHidden) return null;
+
   return (
     <Box
       bgcolor="#1b1d24"

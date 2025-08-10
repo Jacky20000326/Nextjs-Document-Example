@@ -29,7 +29,11 @@ export const SidebarItem = ({ title, subItemList }: Props) => {
       <Collapse in={isOpen} timeout="auto">
         <Box py={1.2}>
           {subItemList.map((subItem) => (
-            <SideBarSubItem key={subItem.title} title={subItem.title} />
+            <SideBarSubItem
+              key={subItem.title}
+              title={subItem.title}
+              href={subItem?.href ?? ""}
+            />
           ))}
         </Box>
       </Collapse>

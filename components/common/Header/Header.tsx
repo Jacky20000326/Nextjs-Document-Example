@@ -1,7 +1,8 @@
 import { Divider, Link, Stack, Typography } from "@mui/material";
 import { Navigation } from "@/components/common/Header/Navigation";
 import { headerContainerStyles, brandNameStyles } from "./Header.styles";
-import LightModeIcon from "@mui/icons-material/LightMode";
+import { PATH } from "@/constants/common/path";
+import { ThemeMode } from "./ThemeMode";
 export const Header = () => {
   return (
     <Stack
@@ -16,7 +17,7 @@ export const Header = () => {
         fontFamily="logo.fontFamily"
         variant="h4"
         component={Link}
-        href="/"
+        href={PATH.HOME}
         sx={brandNameStyles}
       >
         J.K
@@ -24,7 +25,7 @@ export const Header = () => {
       <Stack direction="row" gap={2} alignItems="center">
         <Navigation />
         <Divider orientation="vertical" flexItem />
-        <LightModeIcon fontSize="small" />
+        <ThemeMode />
       </Stack>
     </Stack>
   );

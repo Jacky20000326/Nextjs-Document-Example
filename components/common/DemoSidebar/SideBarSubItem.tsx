@@ -1,10 +1,11 @@
 import { Stack, Typography } from "@mui/material";
-
+import Link from "next/link";
 interface Props {
   title: string;
+  href: string;
 }
 
-export const SideBarSubItem = ({ title }: Props) => {
+export const SideBarSubItem = ({ title, href }: Props) => {
   return (
     <Stack
       sx={{
@@ -16,9 +17,11 @@ export const SideBarSubItem = ({ title }: Props) => {
         },
       }}
     >
-      <Typography variant="subtitle1" color="sidebar.primary" px={1}>
-        {title}
-      </Typography>
+      <Link href={href}>
+        <Typography variant="subtitle1" color="sidebar.primary" px={1}>
+          {title}
+        </Typography>
+      </Link>
     </Stack>
   );
 };

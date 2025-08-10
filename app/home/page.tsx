@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
+import Home from "@/components/pages/home/Home";
 
-export default function Home() {
-  return <Box bgcolor="#1b1d24">Home</Box>;
+export default function HomePage() {
+  return <Home />;
 }
