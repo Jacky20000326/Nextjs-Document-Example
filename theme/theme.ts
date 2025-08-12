@@ -1,4 +1,24 @@
 import { createTheme } from "@mui/material/styles";
+import { Geist_Mono, Inter, Pacifico } from "next/font/google";
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const inter = Inter({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const pacifico = Pacifico({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pacifico",
+});
 
 export const darkTheme = createTheme({
   palette: {
@@ -30,9 +50,9 @@ export const darkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Inter, sans-serif,Roboto",
+    fontFamily: inter.style.fontFamily,
     logo: {
-      fontFamily: "Pacifico",
+      fontFamily: pacifico.style.fontFamily,
     },
     h1: {
       fontWeight: 600,
@@ -48,6 +68,7 @@ export const darkTheme = createTheme({
       lineHeight: "2rem",
     },
     body1: {
+      fontFamily: geistMono.style.fontFamily,
       fontSize: "1.25rem",
       lineHeight: "2rem",
     },
@@ -57,9 +78,7 @@ export const darkTheme = createTheme({
     },
     tag: {
       fontSize: "1.25rem",
-      fontFamily: "Roboto Mono",
-      lineHeight: "1.25rem",
-      fontWeight: 700,
+      fontFamily: geistMono.style.fontFamily,
     },
   },
   components: {
