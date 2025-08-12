@@ -62,10 +62,19 @@ export const darkTheme = createTheme({
       fontWeight: 600,
       fontSize: "2.5rem",
     },
+    h4: {
+      fontWeight: 600,
+      fontSize: "1.75rem",
+    },
     h5: {
       fontWeight: 400,
       fontSize: "1.25rem",
       lineHeight: "2rem",
+    },
+    h6: {
+      fontWeight: 400,
+      fontSize: "1rem",
+      lineHeight: "1.5rem",
     },
     body1: {
       fontFamily: geistMono.style.fontFamily,
@@ -77,7 +86,7 @@ export const darkTheme = createTheme({
       lineHeight: "1.25rem",
     },
     tag: {
-      fontSize: "1.25rem",
+      fontSize: "1rem",
       fontFamily: geistMono.style.fontFamily,
     },
   },

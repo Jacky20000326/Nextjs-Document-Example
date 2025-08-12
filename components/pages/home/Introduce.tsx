@@ -1,13 +1,8 @@
 import { Stack, Typography } from "@mui/material";
 export const Introduce = () => {
   return (
-    <Stack bgcolor="background.default" pt={10} px="25vw">
-      <Typography
-        mb={1.75}
-        variant="tag"
-        color="text.tertiary"
-        fontWeight={700}
-      >
+    <Stack bgcolor="background.default" pt={10}>
+      <Typography variant="tag" color="text.tertiary" fontWeight={700}>
         @Jacky20000326
       </Typography>
       <Typography variant="h3" mb={3}>
