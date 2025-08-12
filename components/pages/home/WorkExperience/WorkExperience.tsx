@@ -5,7 +5,7 @@ import { EXPERIENCES } from "./constants";
 export const WorkExperience = () => {
   return (
     <Box mt={10}>
-      <Typography variant="h4" mb={2}>
+      <Typography variant="h4" mb={4}>
         Work Experience
       </Typography>
       <Stack gap={2}>
