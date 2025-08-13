@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { Introduce } from "./Introduce";
 import { WorkExperience } from "./WorkExperience/WorkExperience";
 import { Skills } from "./Skills/Skills";
+import { Projects } from "./Projects";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Introduce />
       <WorkExperience />
       <Skills />
+      <Projects />
     </Box>
   );
 };
