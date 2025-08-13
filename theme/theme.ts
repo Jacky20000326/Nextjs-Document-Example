@@ -82,6 +82,7 @@ export const darkTheme = createTheme({
       lineHeight: "2rem",
     },
     body2: {
+      fontFamily: geistMono.style.fontFamily,
       fontSize: "0.875rem",
       lineHeight: "1.25rem",
     },

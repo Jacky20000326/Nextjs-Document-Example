@@ -22,7 +22,7 @@ export const Skills = () => {
             alignItems="center"
           >
             <ArrowRightOutlinedIcon />
-            <Typography variant="h5" color="text.tertiary">
+            <Typography variant="body1" color="text.secondary">
               {skill}
             </Typography>
           </Stack>

@@ -1,4 +1,4 @@
 import { atom } from "jotai";
 import { ThemeType } from "./types";
 
-export const themeAtom = atom<ThemeType>(ThemeType.LIGHT);
+export const themeAtom = atom<ThemeType>(ThemeType.DARK);
