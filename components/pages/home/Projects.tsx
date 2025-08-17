@@ -19,19 +19,11 @@ const projects = [
     name: "郵政博物館",
     url: "https://collection.post.gov.tw/",
   },
-  {
-    name: "YOXI",
-    url: "",
-  },
-  {
-    name: "Yoo 棋牌",
-    url: "",
-  },
 ];
 
 export const Projects = () => {
   return (
-    <Box mt={10}>
+    <Box my={10}>
       <Typography variant="h4">Projects involved in</Typography>
       <Stack gap={1} mt={3}>
         {projects.map((project) => (

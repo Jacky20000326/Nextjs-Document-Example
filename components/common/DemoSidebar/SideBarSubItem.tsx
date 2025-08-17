@@ -17,7 +17,7 @@ export const SideBarSubItem = ({ title, href }: Props) => {
         },
       }}
     >
-      <Link href={href}>
+      <Link href={href} style={{ textDecoration: "none" }}>
         <Typography variant="subtitle1" color="sidebar.primary" px={1}>
           {title}
         </Typography>

@@ -48,5 +48,3 @@ export const DRAWER_LIST: DrawerListType[] = [
     ],
   },
 ];
-
-export const ROUTES_WITHOUT_SIDEBAR = ["/home"];
