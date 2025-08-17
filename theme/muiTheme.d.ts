@@ -50,10 +50,12 @@ declare module "@mui/material/styles" {
   interface TypographyVariant {
     logo: React.CSSProperties;
     tag: React.CSSProperties;
+    article: React.CSSProperties;
   }
   interface TypographyVariantsOptions {
     logo: React.CSSProperties;
     tag: React.CSSProperties;
+    article: React.CSSProperties;
   }
 }
 
@@ -61,5 +63,6 @@ declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     logo: true;
     tag: true;
+    article: true;
   }
 }

@@ -90,6 +90,12 @@ export const darkTheme = createTheme({
       fontSize: "1rem",
       fontFamily: geistMono.style.fontFamily,
     },
+    article: {
+      fontFamily: inter.style.fontFamily,
+      fontWeight: 600,
+      fontSize: "1rem",
+      lineHeight: "2rem",
+    },
   },
   components: {
     MuiAppBar: {
