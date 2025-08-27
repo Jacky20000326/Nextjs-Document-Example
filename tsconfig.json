@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/blog/[slug]/page.tsx",
-    "app/blog/page.mdx"
+    "app/blog/page.mdx",
+    "app/blog/fetchData/page.mdx"
   ],
   "exclude": ["node_modules"]
 }

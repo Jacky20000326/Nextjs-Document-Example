@@ -10,19 +10,19 @@ export const DRAWER_LIST: DrawerListType[] = [
     subItems: [
       {
         title: "[hooks] useState",
-        href: "/fetch",
+        href: "/blog/useState",
       },
       {
         title: "[hooks] useEffect",
-        href: "/fetch",
+        href: "/blog/useEffect",
       },
       {
         title: "[Cache] fetch",
-        href: "/fetch",
+        href: "/blog/fetchData",
       },
       {
         title: "[Cache] unstable_cache",
-        href: "/fetch",
+        href: "/blog/unstable_cache",
       },
     ],
   },
@@ -43,7 +43,7 @@ export const DRAWER_LIST: DrawerListType[] = [
       },
       {
         title: "[components] Box",
-        href: "/fetch",
+        href: "/fetchData",
       },
     ],
   },

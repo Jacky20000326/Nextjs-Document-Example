@@ -10,7 +10,7 @@ export default function BlogLayout({
     <section>
       <Stack direction="row" width="100%">
         <DemoSidebar />
-        {children}
+        <Box pl={4}>{children}</Box>
       </Stack>
     </section>
   );

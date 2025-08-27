@@ -1,12 +1,12 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 
 export default function Blog() {
   return (
-    <Stack p={4} gap={2}>
+    <Stack gap={2}>
       <Typography variant="h4">關於我</Typography>
       <Stack>
         <Typography variant="article" color="sidebar.secondary">
-          我是位於台灣知名交易所任職前端工程師，對於加密貨幣及投資有興趣。
+          我是任職台灣知名交易的職前端工程師，對於加密貨幣及投資感興趣。
         </Typography>
       </Stack>
       <Typography variant="h4">關於部落格</Typography>
