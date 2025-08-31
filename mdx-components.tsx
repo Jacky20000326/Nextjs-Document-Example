@@ -3,37 +3,41 @@ import { Typography, Link as MuiLink, Box, Divider } from "@mui/material";
 
 const components: MDXComponents = {
   h1: ({ children, ...props }) => (
-    <Typography
+    <h1
       component="h1"
-      variant="h3"
-      color="text.primary"
-      sx={{ mt: 4, mb: 2, fontWeight: 600 }}
+      style={{
+        margin: "2rem 0 1rem 0",
+        color: "#ebebeb",
+        textDecoration: "wavy underline",
+        textDecorationColor: "#b6aca4",
+        textUnderlineOffset: "6px",
+        textDecorationThickness: "2px",
+
+        fontSize: "2rem",
+      }}
       {...props}
     >
       {children}
-    </Typography>
+    </h1>
   ),
   h2: ({ children, ...props }) => (
-    <Typography
+    <h2
       component="h2"
-      variant="h4"
-      color="text.primary"
-      sx={{ mt: 3.5, mb: 1.75, fontWeight: 600 }}
+      style={{ margin: "2rem 0 2rem 0", fontSize: "1.5rem" }}
       {...props}
     >
       {children}
-    </Typography>
+    </h2>
   ),
   h3: ({ children, ...props }) => (
-    <Typography
+    <h3
       component="h3"
-      variant="h5"
-      color="text.primary"
-      sx={{ mt: 3, mb: 1.5, fontWeight: 600 }}
+      style={{ margin: "2rem 0 1rem 0", color: "#ebebeb" }}
       {...props}
     >
-      {children}
-    </Typography>
+      {" "}
+      {children}{" "}
+    </h3>
   ),
   h4: ({ children, ...props }) => (
     <Typography
@@ -72,8 +76,8 @@ const components: MDXComponents = {
     <Typography
       component="p"
       variant="article"
-      color="sidebar.secondary"
-      sx={{ my: 1.5 }}
+      color="#fff"
+      sx={{ my: 1.5, fontWeight: 400 }}
       {...props}
     >
       {children}
@@ -90,21 +94,32 @@ const components: MDXComponents = {
     </MuiLink>
   ),
   ul: ({ children, ...props }) => (
-    <Box component="ul" sx={{ pl: 3, my: 1.5 }} {...props}>
-      {children}
-    </Box>
-  ),
-  ol: ({ children, ...props }) => (
-    <Box component="ol" sx={{ pl: 3, my: 1.5 }} {...props}>
-      {children}
-    </Box>
-  ),
-  li: ({ children, ...props }) => (
-    <Box
-      component="li"
-      sx={{ my: 0.75, "&::marker": { color: "primary.main" } }}
+    <ul
+      style={{
+        paddingLeft: "18px",
+        m: 1.5,
+        color: "#fff",
+      }}
       {...props}
     >
+      {children}
+    </ul>
+  ),
+  ol: ({ children, ...props }) => (
+    <ol
+      style={{
+        fontSize: "18px",
+        paddingLeft: "2.5em",
+        m: 1.5,
+        color: "#fff",
+      }}
+      {...props}
+    >
+      {children}
+    </ol>
+  ),
+  li: ({ children, ...props }) => (
+    <Box component="li" sx={{ color: "#fff", marginLeft: 1.5 }} {...props}>
       {children}
     </Box>
   ),
@@ -114,11 +129,12 @@ const components: MDXComponents = {
       sx={{
         my: 2,
         px: 2,
-        py: 1.5,
+        py: 0.5,
         borderLeft: 4,
-        borderColor: "primary.main",
-        bgcolor: "background.paper",
+        borderColor: "#dbdbdb",
+        bgcolor: "#967458",
         color: "text.secondary",
+        borderRadius: 1.5,
       }}
       {...props}
     >

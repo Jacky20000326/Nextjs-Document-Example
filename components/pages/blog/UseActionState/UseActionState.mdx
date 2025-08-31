@@ -1,0 +1,23 @@
+import { UseActionState } from "./UseActionState";
+
+# useActionState example
+
+### 前言:
+
+> useActionState 是 React 18 中新增的一個 Hook，useActionState 允許基於 Form Action 來管理狀態。
+
+### 使用時機：
+
+當使用 Form 時，可以將 Form 的 Action 及初始值交給 useActionState 來管理。<br/>
+useActionState 會回傳新的 state 及 formAction，將 formAction 設置到 Form 的 action 屬性中，<br/>就可以將 Form 的 Action 及初始值交給 useActionState 來管理。<br/>
+
+### 使用情境 ( 以 Next 官方為例來做延伸 ):
+
+1. 顯示表單錯誤狀態訊息
+2. 表單提交後的狀態顯示
+
+### 範例：
+
+當我輸入 jacky 時，會顯示 "Login successful"，當我輸入其他時，會顯示 "Login failed"。 ( 表單提交後的狀態顯示 )
+
+<UseActionState />
