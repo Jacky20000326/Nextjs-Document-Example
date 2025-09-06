@@ -1,5 +1,6 @@
-import { Stack, Link, Box } from "@mui/material";
+import { Stack, Box } from "@mui/material";
 import { NAV_ITEMS } from "@/components/common/Header/constants";
+
 import { StyledLink } from "./Navigation.styled";
 
 export const Navigation = () => {
@@ -21,9 +22,9 @@ export const Navigation = () => {
       }
     >
       {NAV_ITEMS.map((item) => (
-        <Link key={item.name} href={item.href} underline="none" sx={StyledLink}>
+        <StyledLink key={item.name} href={item.href}>
           {item.name}
-        </Link>
+        </StyledLink>
       ))}
     </Stack>
   );

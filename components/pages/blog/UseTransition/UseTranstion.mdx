@@ -1,0 +1,27 @@
+# [hook] useTransition
+
+### 前言:
+
+> useTransition 是 React 18 中新增的一個 Hook，useTransition 允許將特定的 UI 於背景執行渲染，避免阻塞主流程。
+
+### 注意事項：
+1. 使用 useTransition 不需傳入參數及呼叫後回傳兩個值，分別是 isPending 及 startTransition。<br/> isPending: 當背景渲染時為 true，當渲染完成為 false<br/>startTransition: 標記為過度。
+
+2. startTransition 的參數為一個函數，函數會 startTransition 內部呼叫 ( 呼叫的函數都通會被命名為 action )。<br/> 在 action 內可能會呼叫多個 set function。<br/> 同步：自動被標記為 Transition。這意味著這些更新 不會阻塞 UI 渲染，也不會顯示多餘的  loading indicator。<br/> 非同步： 在使用 async await 時在 startTransition 內部時，若在 set function 前使用 await 是無發被記為 Transition 的，若想要被標記必須將 set function 外面再包一層 startTransition。
+例如：
+    ```tsx
+    startTransition(async () => {
+      await someAsyncFunction();
+      // ✅ Using startTransition *after* await
+      startTransition(() => {
+        setPage('/about');
+      });
+    });
+    ```
+
+
+### 使用時機：
+
+當需要加入過渡動畫時，可以使用 useTransition。
+
+### 範例：

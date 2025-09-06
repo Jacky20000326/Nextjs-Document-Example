@@ -1,8 +1,9 @@
-import { Divider, Link, Stack, Typography } from "@mui/material";
+import { Divider, Stack, Typography } from "@mui/material";
 import { Navigation } from "@/components/common/Header/Navigation";
 import { headerContainerStyles, brandNameStyles } from "./Header.styles";
 import { PATH } from "@/constants/common/path";
 import { ThemeMode } from "./ThemeMode";
+import Link from "next/link";
 export const Header = () => {
   return (
     <Stack

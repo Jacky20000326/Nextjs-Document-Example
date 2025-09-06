@@ -1,0 +1,24 @@
+import { UseDeferredValue } from "./UseDeferredValue";
+import { TransitionEffect } from "./TransitionEffect/TransitionEffect";
+
+
+# [hook] useDeferredValue
+
+### 前言:
+
+> useDeferredValue 是個可以 UI 延後更新的 hook。在 UI 在更新的過程使用 useDeferredValue 不會有延遲渲染問題，因為更新本身被延遲了。
+### 注意事項：
+1. 當傳遞參數給 useDeferredValue 需要是原始資料如字串、數字或是在外部的物件，如果在渲染過程<br/>中產生新的物件且傳遞給 useDeferredValue，會導致產生許多不必要的渲染。
+2. useDeferredValue 內部是使用 object.is 來比較值若有不同則會在背景執行渲染，且該選染過程<br/>是可以被中斷的，當值再次被更新時就會在背景重新渲染。
+3. useDeferredValue 整合 Suspense 時，當有傳入 useDeferredValue 的值更新時背景更新不會<br/>讓使用者突然看到 fallback，React 會繼續顯示舊的值，而不是立刻切換成 fallback 避免 <br/>UI 不斷閃爍「loading → 新資料 → loading → 新資料」。。
+
+### 使用時機：
+1. 載入新內容時顯示過時的內容。
+2. 官方有提到要如何加入在使用 useDeferredValue 時可以顯示的過度動畫處理方式
+
+### 一般使用範例：
+
+<UseDeferredValue />
+
+### 過度動畫處理方式：
+<TransitionEffect />

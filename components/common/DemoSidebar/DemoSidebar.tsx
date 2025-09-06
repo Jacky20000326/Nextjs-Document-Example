@@ -16,7 +16,7 @@ export const DemoSidebar = () => {
       bgcolor="#1b1d24"
       width={isSidebarOpen ? 300 : 20}
       position="sticky"
-      top={20}
+      top={0}
       height="100vh"
     >
       <Box>

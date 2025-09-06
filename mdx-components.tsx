@@ -135,6 +135,7 @@ const components: MDXComponents = {
         bgcolor: "#967458",
         color: "text.secondary",
         borderRadius: 1.5,
+        maxWidth: "90%",
       }}
       {...props}
     >
@@ -155,8 +156,6 @@ const components: MDXComponents = {
         bgcolor: "background.paper",
         color: "text.primary",
         fontFamily: "var(--font-geist-mono), monospace",
-        border: "1px solid",
-        borderColor: "divider",
       }}
       {...props}
     >
@@ -176,6 +175,7 @@ const components: MDXComponents = {
         border: "1px solid",
         borderColor: "divider",
         fontFamily: "var(--font-geist-mono), monospace",
+        maxWidth: "80%",
       }}
       {...props}
     >
