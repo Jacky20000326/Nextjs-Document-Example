@@ -25,6 +25,10 @@ export const DRAWER_LIST: DrawerListType[] = [
         title: "[hooks] useTransition",
         href: "/blog/useTranstion",
       },
+      {
+        title: "[hooks] useInsertionEffect",
+        href: "/blog/useInsertionEffect",
+      },
     ],
   },
 ];

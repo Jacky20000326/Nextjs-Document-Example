@@ -1,8 +1,10 @@
+import { Example1 } from "./example1";
+
 # [hook] useTransition
 
 ### 前言:
 
-> useTransition 是 React 18 中新增的一個 Hook，useTransition 允許將特定的 UI 於背景執行渲染，避免阻塞主流程。
+> useTransition 是 React 18 中新增的一個 Hook，useTransition 允許將特定的 UI 於背景執行渲染，避免阻塞主流程。只要是標記某些 state 更新為「低優先級」
 
 ### 注意事項：
 1. 使用 useTransition 不需傳入參數及呼叫後回傳兩個值，分別是 isPending 及 startTransition。<br/> isPending: 當背景渲染時為 true，當渲染完成為 false<br/>startTransition: 標記為過度。
@@ -18,10 +20,10 @@
       });
     });
     ```
-
+3. 當將 action 於父曾傳遞至子曾執行時，需要使用 transition 內使用 await 目前是 transition 裡面不知道傳入的 action 是否為非同步。
+4. 特別注意 startTransition 並不會幫你處理 race condition，需要自己處理。官方有提到若連續發送多次晴球時，<br/> 有可能會發生最後一次請求被前面的請求所覆蓋的問題。
 
 ### 使用時機：
 
-當需要加入過渡動畫時，可以使用 useTransition。
-
-### 範例：
+1. 在渲染時降低某個狀態更新的優先度進而不阻塞主流程。
+2. 顯示 loading indicator。

@@ -1,5 +1,6 @@
 import { use } from "react";
 import { getPost } from "../utils";
+import { Box, Typography } from "@mui/material";
 
 interface Props {
   search: string;
@@ -16,10 +17,10 @@ export const Article = ({ search }: Props) => {
   return (
     <div>
       {postList?.map((post: SearchResultType) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
-        </div>
+        <Box key={post.id}>
+          <Typography>{post.title}</Typography>
+          <Typography>{post.body}</Typography>
+        </Box>
       ))}
     </div>
   );
