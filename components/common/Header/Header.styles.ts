@@ -1,4 +1,4 @@
-import { SxProps, Theme, alpha } from "@mui/material";
+import { SxProps, Theme } from "@mui/material";
 
 export const headerContainerStyles: SxProps<Theme> = {
   backgroundColor: "background.default",
