@@ -1,24 +1,8 @@
 import { createTheme } from "@mui/material/styles";
-import { Geist_Mono, Inter, Pacifico } from "next/font/google";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  weight: ["400", "600"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
-const pacifico = Pacifico({
-  weight: ["400"],
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-pacifico",
-});
+const GEIST_MONO_FONT = "\"Menlo\", \"Courier New\", monospace";
+const INTER_FONT = "\"Inter\", \"Helvetica Neue\", Helvetica, Arial, sans-serif";
+const PACIFICO_FONT = "\"Pacifico\", cursive";
 
 export const darkTheme = createTheme({
   palette: {
@@ -50,9 +34,9 @@ export const darkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: inter.style.fontFamily,
+    fontFamily: INTER_FONT,
     logo: {
-      fontFamily: pacifico.style.fontFamily,
+      fontFamily: PACIFICO_FONT,
     },
     h1: {
       fontWeight: 600,
@@ -77,21 +61,21 @@ export const darkTheme = createTheme({
       lineHeight: "1.5rem",
     },
     body1: {
-      fontFamily: geistMono.style.fontFamily,
+      fontFamily: GEIST_MONO_FONT,
       fontSize: "1.25rem",
       lineHeight: "2rem",
     },
     body2: {
-      fontFamily: geistMono.style.fontFamily,
+      fontFamily: GEIST_MONO_FONT,
       fontSize: "0.875rem",
       lineHeight: "1.25rem",
     },
     tag: {
       fontSize: "1rem",
-      fontFamily: geistMono.style.fontFamily,
+      fontFamily: GEIST_MONO_FONT,
     },
     article: {
-      fontFamily: inter.style.fontFamily,
+      fontFamily: INTER_FONT,
       fontWeight: 600,
       fontSize: "1rem",
       lineHeight: "2rem",

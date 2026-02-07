@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-geist-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-geist-mono: "Menlo", "Courier New", monospace;
+  --font-inter: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+}
+
 html,
 body {
   width: 100%;

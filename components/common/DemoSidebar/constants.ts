@@ -8,6 +8,10 @@ export const DRAWER_LIST: DrawerListType[] = [
         title: "[hooks] useState",
         href: "/blog/useState",
       },
+      {
+        title: "[Feature] Cache Component",
+        href: "/blog/CacheComponent",
+      },
     ],
   },
   {

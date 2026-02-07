@@ -9,5 +9,5 @@ export const useTheme = () => {
     setTheme(theme === ThemeType.LIGHT ? ThemeType.DARK : ThemeType.LIGHT);
   };
 
-  return { theme, toggleTheme };
+  return { theme, toggleTheme, setTheme };
 };

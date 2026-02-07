@@ -1,4 +1,4 @@
-import { SxProps, Theme } from "@mui/material";
+import type { SxProps, Theme } from "@mui/material/styles";
 
 export const headerContainerStyles: SxProps<Theme> = {
   backgroundColor: "background.default",
@@ -22,14 +22,6 @@ export const coffeeIconStyles: SxProps<Theme> = {
   "&:hover": {
     color: "#cbd5e1",
   },
-};
-
-export const brandNameStyles: SxProps<Theme> = {
-  display: "flex",
-  fontWeight: 600,
-  fontSize: "1.8rem",
-  color: "text.secondary",
-  textDecoration: "none",
 };
 
 // 右側容器樣式
